@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Elektrowaren, Utensilien">
-    <title>Homework #1 (ISM)</title>
+    <meta name="description" content="Elektrische goederen, De tools">
+    <title>Homework #2 (ISM)</title>
 </head>
 <body>
     <header>
@@ -27,38 +27,38 @@
                     </form>
                     <form class="info_button info_button__search">
                         <input type="search" placeholder="Zoek product" id="header_search">
-                        <img src="img/searchImg.png">
+                        <img src="img/searchImg.png" alt="">
                     </form>
-                    <!--What is this below?-->
-                    <div class="info_button info_button__something">
-                        <div>
-                            <span>Excl.BTW</span>
+                    <div class="info_button info_button__checkbox">
+                        <div class="checkbox-excluded">
+                            <input type="radio" id="excl-check" name="btw-check">
+                            <label for="excl-check">Excl.BTW</label>
                         </div>
-                        <div>
-
+                        <div class="checkbox-included">
+                            <input type="radio" id="incl-check" name="btw-check">
+                            <label for="incl-check">Incl.BTW</label>
                         </div>
                     </div>
-                    <!--What is this above?-->
                     <button class="info_button info_button__login">
-                        <img src="img/loginImg.png">
-                        <span>Inloggen</span>Inloggen
+                        <img src="img/loginImg.png" alt="">
+                        <span>Inloggen</span>
                     </button>
                     <div class="info_button info_button__cart">
-                        <img src="img/cartImg.png">
+                        <img src="img/cartImg.png" alt="">
                         <span class="info_button_cart__count">2</span>
                     </div>
                 </div>
                 <div class="header_info__advantages">
                     <a class="info_advantages__item" href="#">
-                        <img src="img/serviceImg.png">
+                        <img src="img/serviceImg.png" alt="">
                         Uitstekende klantenservice
                     </a>
                     <a class="info_advantages__item" href="#">
-                        <img src="img/deliveryImg.png">
+                        <img src="img/deliveryImg.png" alt="">
                         Gratis levering of afhalen in onze shops
                     </a>
                     <a class="info_advantages__item" href="#">
-                        <img src="img/phoneImg.png">
+                        <img src="img/phoneImg.png" alt="">
                         Gratis levering of afhalen in onze shops
                     </a>
                 </div>
@@ -87,7 +87,7 @@
         </nav>
     </aside>
     <main>
-        <section class="products_wrapper">
+        <section class="products wrapper">
             <div class="products__top-block_wrapper">
                 <div class="products__top-block top-block__sales">
                     <h2>Gehoorbescherming 20% korting</h2>
@@ -100,7 +100,7 @@
                     <span>Heb je een vraag?</span><br>
                     <span>Wij staan voor je klaar!</span><br>
                     <div class="top-block__timetable_item">
-                        <img src="img/clock.png">
+                        <img src="img/clock.png" alt="">
                         <div>
                             <span>Openingstijden:</span><br>
                             <span>Ma-Vr 08.00 uur - 18.00 uur</span><br>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <div class="top-block__timetable_item">
-                        <img src="img/phoneImg.png">
+                        <img src="img/phoneImg.png" alt="">
                         <div>
                             <span>Telefonisch bereikbaar:</span><br>
                             <span>Ma-Vr 08.00 uur - 18.00 uur</span><br>
@@ -134,6 +134,121 @@
                 </div>
             </div>
         </section>
+        <section class="slider wrapper">
+            <div class="slider__top-title">
+                <h2>Bestsellers</h2>
+            </div>
+            <div class="slider__items_wrapper">
+                <div class="slider__button slider_left-button">
+                    <img src="img/leftArrow.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/linkedFile2.png" alt="Bestsellers">
+                    <span>Schuurmachine FERM Ak450970</span><br>
+                    <h2>€ 150,-</h2>
+                </div>
+                <div class="slider__item">
+                    <img src="img/linkedFile3.png" alt="Bestsellers">
+                    <span>Rookmelder Special Ak450970</span><br>
+                    <h2>€ 50,-</h2>
+                </div>
+                <div class="slider__item">
+                    <img src="img/linkedFile2.png" alt="Bestsellers">
+                    <span>Schuurmachine FERM Ak450970</span><br>
+                    <h2>€ 150,-</h2>
+                </div>
+                <div class="slider__item">
+                    <img src="img/linkedFile3.png" alt="Bestsellers">
+                    <span>Rookmelder Special Ak450970</span><br>
+                    <h2>€ 50,-</h2>
+                </div>
+                <div class="slider__item">
+                    <img src="img/linkedFile2.png" alt="Bestsellers">
+                    <span>Schuurmachine FERM Ak450970</span><br>
+                    <h2>€ 150,-</h2>
+                </div>
+                <div class="slider__button slider_right-button">
+                    <img src="img/rightArrow.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="delivery wrapper">
+            <!-- <img> on background -->
+            <div class="delivery__item">
+                <a href="#"></a>
+                <h2 class="delivery__item_title">Nachtbezorging</h2>
+                <h2 class="delivery__item_desc">Vandaag besteld vannacht al in huis</h2>
+            </div>
+            <!-- <img> on background -->
+            <div class="delivery__item">
+                <a href="#"></a>
+                <h2 class="delivery__item_title">Nachtbezorging</h2>
+                <h2 class="delivery__item_desc">Vandaag besteld vannacht al in huis</h2>
+            </div>
+        </section>
     </main>
+    <footer>
+        <section class="footer_wrapper footer__menu">
+            <div class="footer_menu__item">
+                <h3>Over bedrijf</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Assortiment</a></li>
+                        <li><a href="#">Zakelijke klanten</a></li>
+                        <li><a href="#">Nieuws</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_menu__item">
+                <h3>Klantenservice</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Bestellen</a></li>
+                        <li><a href="#">Betalen</a></li>
+                        <li><a href="#">Retourneren</a></li>
+                        <li><a href="#">Bezorgen</a></li>
+                        <li><a href="#">Afhalen</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Nieuwsbrief</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_menu__item">
+                <h3>Nieuwsbrief</h3>
+                <form class="footer_menu__email" action="#">
+                    <input type="email" placeholder="E-mailadres" id="footer_email">
+                    <input class="footer_menu_email__button" type="submit" value="Aanmelden">
+                </form>
+            </div>
+            <div class="footer_menu__item">
+                <a href="#">
+                    <img src="img/linked-file-linked-file.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/group1.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/group2.png" alt="">
+                </a>
+            </div>
+        </section>
+        <section class="footer_wrapper footer__sidebar">
+            <div class="footer_sidebar__menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Algemene voorwarden</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_sidebar__rating">
+                <!-- must be some exterior script for getting this rating -->
+                <img src="img/stars.png" alt="">
+                <span>1.011 beoordelingen</span>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
