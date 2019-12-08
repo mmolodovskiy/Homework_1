@@ -1,0 +1,48 @@
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Black/Avenir-Black.woff2') format('woff2'),
+         url('../fonts/Avenir-Black/Avenir-Black.woff') format('woff'),
+         url('../fonts/Avenir-Black/Avenir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Avenir', sans-serif;
+    color: rgba(0, 0, 0, 1);
+}
+
+header {
+    background-color: rgba(255, 198, 0, 1);
+}
+
+footer {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1111px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header__info_wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}

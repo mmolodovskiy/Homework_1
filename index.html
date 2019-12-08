@@ -6,11 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Elektrische goederen, De tools">
-    <title>Homework #2 (ISM)</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Homework #3 (ISM)</title>
 </head>
 <body>
     <header>
-        <div class="header_wrapper">
+        <div class="header_wrapper container">
             <div class="header__logo">
                 <a href="#">
                     <img src="img/layer1.png" alt="logo image">
@@ -18,13 +21,17 @@
             </div>
             <div class="header__info_wrapper">
                 <div class="header_info__buttons">
-                    <form class="info_button info_button__select">
-                        <select name="header_menu" id="header_menu">
-                            <option value="Producten1">Producten1</option>
-                            <option value="Producten2">Producten2</option>
-                            <option value="Producten3">Producten3</option>
-                        </select>
-                    </form>
+                    <nav class="info_button info_button__select">
+                        <button type="submit" class="info_button_select__btn">Producten</button>
+                        <ul class="info_button_select__items">
+                            <li><a href="#">Producten1</a></li>
+                            <li><a href="#">Producten2</a></li>
+                            <li><a href="#">Producten3</a></li>
+                            <li><a href="#">Producten4</a></li>
+                            <li><a href="#">Producten5</a></li>
+                        </ul>
+                        <div class="info_button_select__arrow"></div>
+                    </nav>
                     <form class="info_button info_button__search">
                         <input type="search" placeholder="Zoek product" id="header_search">
                         <img src="img/searchImg.png" alt="">
@@ -65,7 +72,7 @@
             </div>
         </div>
     </header>
-    <aside>
+    <aside class="container">
         <nav>
             <ul>
                 <li><a href="#">Behuizingen</a></li>
@@ -86,7 +93,7 @@
             </ul>
         </nav>
     </aside>
-    <main>
+    <main class="container">
         <section class="products wrapper">
             <div class="products__top-block_wrapper">
                 <div class="products__top-block top-block__sales">
@@ -188,7 +195,7 @@
         </section>
     </main>
     <footer>
-        <section class="footer_wrapper footer__menu">
+        <section class="footer_wrapper footer__menu container">
             <div class="footer_menu__item">
                 <h3>Over bedrijf</h3>
                 <nav>
@@ -232,7 +239,7 @@
                 </a>
             </div>
         </section>
-        <section class="footer_wrapper footer__sidebar">
+        <section class="footer_wrapper footer__sidebar container">
             <div class="footer_sidebar__menu">
                 <nav>
                     <ul>
