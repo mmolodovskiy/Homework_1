@@ -17,6 +17,11 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 
+button {
+    font-family: 'Avenir', sans-serif;
+    font-size: 14px;
+}
+
 header {
     background-color: rgba(255, 198, 0, 1);
 }
@@ -39,10 +44,92 @@ footer {
 
 .header__logo {
     display: flex;
+    flex: 0 1 auto;
+    margin: 8px 109px 8px 0;
 }
 
 .header__info_wrapper {
     display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+}
+
+.header_info__buttons {
+    display: flex;
+}
+
+.info_button {
+    display: flex;
+    margin: 8px;
+}
+
+.info_button__select {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     position: relative;
+}
+
+.info_button_select__btn {
+    text-align: left;
+    width: 140px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 4px;
+    padding-left: 7px;
+}
+
+.info_button_select__items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.info_button_select__items li {
+    display: none;
+    position: relative;
+}
+
+.info_button_select__items a {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    padding-left: 7px;
+}
+
+.info_button_select__arrow {
+    position: absolute;
+    right: 10px;
+    top: auto;
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    border-left: 2px solid rgba(255, 255, 255, 1);
+    transform: rotate(-45deg);
+    transition: all .25s;
+}
+
+.info_button__select:hover .info_button_select__arrow {
+    transform: rotate(135deg);
+    transition: all .25s;
+}
+
+.info_button__select:hover .info_button_select__items li {
+    display: block;
+}
+
+.info_button__checkbox {
+
+}
+
+.BTW_check {
+    
 }
