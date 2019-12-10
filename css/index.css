@@ -131,5 +131,26 @@ footer {
 }
 
 .BTW_check {
-    
+    width: 40px;
+    height: 40px;
+}
+
+.BTW_check label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.checkbox-excluded.BTW_check input:checked + label:after,
+.checkbox-included.BTW_check input:checked + label:after{
+    content: '';
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.BTW_check input {
+    display: none;
 }
