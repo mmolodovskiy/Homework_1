@@ -34,7 +34,9 @@
                     </nav>
                     <form class="info_button info_button__search">
                         <input type="search" placeholder="Zoek product" id="header_search">
-                        <img src="img/searchImg.png" alt="">
+                        <button class="" type="button">
+                            <img src="img/searchImg.png" alt="">
+                        </button>
                     </form>
                     <form class="info_button info_button__checkbox">
                         <div class="checkbox-excluded BTW_check">
@@ -42,17 +44,22 @@
                             <label for="excl-check">Excl. BTW</label>
                         </div>
                         <div class="checkbox-included BTW_check">
-                            <input type="radio" id="incl-check" value="incl-check" name="btw-check">
+                            <input type="radio" id="incl-check" value="incl-check" name="btw-check" checked>
                             <label for="incl-check">Incl. BTW</label>
                         </div>
                     </form>
-                    <button class="info_button info_button__login">
+                    <button class="info_button info_button__login" type="submit">
                         <img src="img/loginImg.png" alt="">
                         <span>Inloggen</span>
                     </button>
                     <div class="info_button info_button__cart">
-                        <img src="img/cartImg.png" alt="">
-                        <span class="info_button_cart__count">2</span>
+                        <a href="#">
+                            <img src="img/cartImg.png" alt="">
+                        </a>
+                        <div class="info_button_cart__count">
+                            <span class="info_button_cart__quantity">2</span>
+                            <span class="info_button_cart__arrow"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="header_info__advantages">
