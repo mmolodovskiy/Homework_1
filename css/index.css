@@ -396,13 +396,13 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
     margin: 3px;
 }
 
-/*.products__top-block:first-of-type {*/
-    /*margin-left: 0;*/
-/*}*/
+.products__top-block:first-of-type.top-block__sales {
+    margin-left: 0;
+}
 
-/*.products__top-block:last-of-type {*/
-    /*margin-right: 0;*/
-/*}*/
+.products__top-block:last-of-type.top-block__timetable {
+    margin-right: 0;
+}
 
 .products__sales_item:first-of-type {
     margin-left: 0;
@@ -429,5 +429,11 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
     border: none;
     height: 40px;
     width: 80px;
+    transition: all .15s;
 }
 
+.top-block__sales_wrapper button:hover, .products__sales_item_wrapper button:hover {
+    transform: scale(1.05);
+    color: rgba(255, 198, 0, 1);
+    transition: all .15s;
+}
