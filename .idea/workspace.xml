@@ -9,14 +9,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.60758746">
+    <splitter split-orientation="horizontal" split-proportion="0.52284867">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+                <state relative-caret-position="256">
+                  <caret line="115" column="67" selection-start-line="115" selection-start-column="47" selection-end-line="115" selection-end-column="67" />
                 </state>
               </provider>
             </entry>
@@ -28,8 +28,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="708">
-                  <caret line="282" column="17" selection-start-line="282" selection-start-column="17" selection-end-line="282" selection-end-column="17" />
+                <state relative-caret-position="424">
+                  <caret line="358" column="20" selection-start-line="358" selection-start-column="20" selection-end-line="358" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -127,18 +127,19 @@
       <workItem from="1575826624758" duration="13586000" />
       <workItem from="1575921487827" duration="5825000" />
       <workItem from="1575969807252" duration="2137000" />
-      <workItem from="1576004804358" duration="9047000" />
+      <workItem from="1576004804358" duration="9645000" />
+      <workItem from="1576092306101" duration="12727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67677000" />
+    <option name="totallyTimeSpent" value="81002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10074627" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10181237" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -175,15 +176,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+        <state relative-caret-position="256">
+          <caret line="115" column="67" selection-start-line="115" selection-start-column="47" selection-end-line="115" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="282" column="17" selection-start-line="282" selection-start-column="17" selection-end-line="282" selection-end-column="17" />
+        <state relative-caret-position="424">
+          <caret line="358" column="20" selection-start-line="358" selection-start-column="20" selection-end-line="358" selection-end-column="20" />
         </state>
       </provider>
     </entry>
