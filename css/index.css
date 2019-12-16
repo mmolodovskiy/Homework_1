@@ -104,18 +104,12 @@ section.wrapper {
 }
 
 .info_button_select__items {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.info_button_select__items li {
     display: none;
-    position: relative;
+    position: absolute;
+    top: 40px;
 }
 
 .info_button_select__items a {
-    position: absolute;
     display: flex;
     align-items: center;
     width: 140px;
@@ -145,8 +139,9 @@ section.wrapper {
     transition: all .25s;
 }
 
-.info_button__select:hover .info_button_select__items li {
-    display: block;
+.info_button__select:hover .info_button_select__items {
+    display: flex;
+    flex-direction: column;
 }
 
 .info_button__search {
