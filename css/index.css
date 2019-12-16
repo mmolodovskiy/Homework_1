@@ -22,7 +22,7 @@ body, a, button, h5, input {
     color: rgba(0, 0, 0, 1);
 }
 
-a, button[type="submit"], input {
+a, button, input, label {
     cursor: url("../img/pointer.png"), pointer;
 }
 
@@ -176,7 +176,6 @@ section.wrapper {
     align-items: center;
     position: absolute;
     right: 10px;
-    cursor: pointer;
     background-color: transparent;
     border: none;
     outline: none;
@@ -197,7 +196,6 @@ section.wrapper {
     display: flex;
     text-align: center;
     align-items: center;
-    cursor: pointer;
     background-color: rgba(255, 255, 255, 1);
     font-size: 12px;
 }
@@ -226,7 +224,6 @@ section.wrapper {
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(0, 0, 0, 1);
     outline: none;
-    cursor: pointer;
 }
 
 .info_button__login:active {
@@ -246,33 +243,39 @@ section.wrapper {
     color: rgba(255, 255, 255, 1);
     margin-right: 0;
     position: relative;
+    border-radius: 4px;
 }
 
 .info_button__cart a {
-    display: flex;
-    justify-content: center;
+    position: absolute;
     width: 100%;
     height: 100%;
-    border: 1px solid red;
 }
 
-.info_button__cart a img {
+.info_button__cart img {
+    display: flex;
+    justify-content: right;
     object-fit: contain;
+    margin: 3px;
 }
 
 .info_button_cart__count {
     display: flex;
-    right: 25%;
     flex-direction: column;
+    justify-content: left;
     align-items: center;
-    position: absolute;
+    margin: 3px;
 }
 
 .info_button_cart__count span {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.info_button_cart__arrow {
+.info_button_cart__count span:after {
+    content: '';
+    display: block;
     width: 5px;
     height: 5px;
     border-bottom: 2px solid rgba(255, 255, 255, 1);
@@ -452,7 +455,6 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
     height: 40px;
     width: 80px;
     transition: all .15s;
-    cursor: pointer;
 }
 
 .top-block__sales_wrapper button:hover, .products__sales_item_wrapper button:hover {
@@ -523,7 +525,6 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
     align-items: center;
     background-color: transparent;
     transition: all .25s;
-    cursor: pointer;
 }
 
 .slider_left-arrow {
@@ -641,7 +642,6 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
     background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 1);
     outline: none;
-    cursor: pointer;
 }
 
 .footer_menu_email__button:active {
