@@ -24,8 +24,47 @@
             <div class="header__info_wrapper">
                 <form class="header__info_burger-btn">
                     <input type="checkbox" id="burger-btn" value="burger-btn" name="burger-btn">
-                    <label for="burger-btn"></label>
-                    <span></span>
+                    <label for="burger-btn" class="burger-btn-label">
+                        <span></span>
+                    </label>
+                    <div class="burger-menu">
+                        <div class="burger-menu__wrapper">
+                            <form class="info_button info_button__search">
+                                <input type="search" placeholder="Zoek product" id="burger_search">
+                                <button class="" type="button">
+                                    <img src="img/searchImg.png" alt="">
+                                </button>
+                            </form>
+                            <form class="info_button info_button__checkbox">
+                                <div class="checkbox-excluded BTW_check">
+                                    <input type="radio" id="excl-burger-check" value="excl-burger-check" name="btw-check">
+                                    <label for="excl-burger-check">Excl. BTW</label>
+                                </div>
+                                <div class="checkbox-included BTW_check">
+                                    <input type="radio" id="incl-burger-check" value="incl-burger-check" name="btw-check" checked>
+                                    <label for="incl-burger-check">Incl. BTW</label>
+                                </div>
+                            </form>
+                            <button class="info_button info_button__login" type="submit">
+                                <img src="img/loginImg.png" alt="">
+                                <span>Inloggen</span>
+                            </button>
+                        </div>
+                        <div class="header_info__advantages">
+                            <a class="info_advantages__item" href="#">
+                                <img src="img/serviceImg.png" alt="">
+                                Uitstekende klantenservice
+                            </a>
+                            <a class="info_advantages__item" href="#">
+                                <img src="img/deliveryImg.png" alt="">
+                                Gratis levering of afhalen in onze shops
+                            </a>
+                            <a class="info_advantages__item" href="#">
+                                <img src="img/phoneImg.png" alt="">
+                                Gratis levering of afhalen in onze shops
+                            </a>
+                        </div>
+                    </div>
                 </form>
                 <div class="header_info__buttons">
                     <nav class="info_button info_button__select">

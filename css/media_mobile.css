@@ -27,71 +27,70 @@
     }
 
     .header__info_burger-btn {
-        height: 40px;
-        width: 40px;
         display: flex;
         flex-direction: column;
-        order: 2;
-        position: relative;
+        align-items: center;
         justify-content: center;
-        align-items: flex-end;
+        height: 40px;
+        width: 40px;
+        order: 2;
         margin: 0 16px;
-    }
-
-    .header__info_burger-btn input {
-        display: none;
-    }
-
-    .header__info_burger-btn label {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        bottom: 0;
         background-color: rgba(255, 198, 0, 1);
         border: 2px solid rgba(0, 0, 0, 1);
         border-radius: 4px;
     }
 
-    .header__info_burger-btn span:before {
-        content: '';
-        display: flex;
+    #burger-btn {
+        display: none;
     }
 
-    .header__info_burger-btn span {
+    #burger-btn:checked ~ .burger-btn-label > span {
+        transform: rotate(45deg);
+    }
+    #burger-btn:checked ~ .burger-btn-label > span:before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #burger-btn:checked ~ .burger-btn-label > span:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .burger-btn-label {
         display: flex;
-        border: 1px solid rgba(0, 0, 0, 1);
-        margin: 3px 5px;
-        z-index: 2;
+        flex-direction: column;
+        position: relative;
         width: 30px;
-        transition: all .5s;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1;
     }
 
-    .header__info_burger-btn span:after {
-        content: '';
+    .burger-btn-label > span,
+    .burger-btn-label > span:before,
+    .burger-btn-label > span:after {
         display: flex;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 1);
+        transition-duration: .25s;
     }
 
-    /*.header__info_burger-btn input:checked ~ span:nth-of-type(2):before,*/
-    /*.header__info_burger-btn input:checked ~ span:nth-of-type(2):after {*/
-        /*content: '';*/
-        /*position: absolute;*/
-        /*top: 50%;*/
-        /*left: 0;*/
-        /*width: 100%;*/
-        /*border: 1px solid rgba(0, 0, 0, 1);*/
-        /*transition: all .5s;*/
-        /*opacity: 1;*/
-    /*}*/
+    .burger-btn-label > span:before {
+        content: '';
+        top: -8px;
+    }
 
-    /*.header__info_burger-btn input:checked ~ span:nth-of-type(2):before {*/
-        /*transform: rotate(45deg);*/
-    /*}*/
+    .burger-btn-label > span:after {
+        content: '';
+        top: 8px;
+    }
 
-    /*.header__info_burger-btn input:checked ~ span:nth-of-type(2):after {*/
-        /*transform: rotate(-45deg);*/
-    /*}*/
+    .burger-menu .info_button {
+        margin: 0 8px;
+    }
 
     .header_info__buttons {
         order: 1;
@@ -109,6 +108,65 @@
         display: none;
     }
 
+    .burger-menu .info_button__search {
+        display: flex;
+    }
 
+    .burger-menu .header_info__advantages {
+        display: flex;
+    }
 
+    .burger-menu {
+        display: none;
+        border: 2px solid rgba(0, 0, 0, 1);
+        background-color: rgba(255, 198, 0, 1);
+        padding: 5px;
+    }
+
+    #burger-btn:checked ~ .burger-menu {
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 55px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger-menu__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+    }
+
+    .burger-menu .info_advantages__item {
+        display: flex;
+        flex: 1 1 33%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .products__top-block {
+        height: unset;
+    }
+
+    .top-block__sales {
+        padding-top: 0;
+        justify-content: space-evenly;
+    }
+
+    .top-block__timetable {
+        flex-direction: row;
+    }
+
+    .top-block__timetable-inner_wrapper {
+        margin: 20px;
+    }
+
+    .products__sales_item {
+        height: unset;
+        padding: 15px;
+        justify-content: space-evenly;
+    }
 }

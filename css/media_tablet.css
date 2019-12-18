@@ -1,3 +1,26 @@
-/*@media (min-width: 721px) and (max-width: 1140px) {*/
+@media (min-width: 721px) and (max-width: 1024px) {
 
-/*}*/
+    .products__top-block {
+        height: unset;
+    }
+
+    .top-block__sales {
+        padding-top: 0;
+        justify-content: space-evenly;
+    }
+
+    .top-block__timetable {
+        flex-direction: row;
+    }
+
+    .top-block__timetable-inner_wrapper {
+        margin: 20px;
+    }
+
+    .products__sales_item {
+        height: unset;
+        padding: 15px;
+        justify-content: space-evenly;
+    }
+
+}
