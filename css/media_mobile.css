@@ -165,6 +165,10 @@
         padding: 13px;
     }
 
+    .aside-btn-label:hover {
+        color: rgba(255, 198, 0, 1);
+    }
+
     #aside-btn {
         display: none;
     }
@@ -175,12 +179,13 @@
     }
 
     aside nav {
-        display: none;
+        opacity: 0;
         margin-top: 60px;
     }
 
     #aside-btn:checked ~ nav {
-        display: block;
+        opacity: 1;
+        transition: all .4s;
     }
 
     aside nav {
@@ -201,6 +206,10 @@
         position: relative;
         left: 30px;
         display: block;
+    }
+
+    main {
+        padding-top: 80px;
     }
 
     .products__top-block {
@@ -225,4 +234,6 @@
         padding: 15px;
         justify-content: space-evenly;
     }
+
+
 }

@@ -375,7 +375,7 @@ main {
 }
 
 .products__top-block {
-    height: 230px;
+    height: auto;
 }
 
 .products__top-block, .products__sales_item {
@@ -398,6 +398,7 @@ main {
 
 .top-block__timetable {
     display: flex;
+    flex-wrap: wrap;
     flex: 1 1 calc(33% - 15px);
     min-width: 245px;
     flex-direction: column;

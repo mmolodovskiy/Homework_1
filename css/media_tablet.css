@@ -1,4 +1,12 @@
-@media (min-width: 721px) and (max-width: 1024px) {
+@media (min-width: 721px) and (max-width: 1030px) {
+
+    aside nav {
+        max-width: 250px;
+    }
+
+    main {
+        padding-top: 110px;
+    }
 
     .products__top-block {
         height: unset;
@@ -11,6 +19,7 @@
 
     .top-block__timetable {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .top-block__timetable-inner_wrapper {
@@ -21,6 +30,14 @@
         height: unset;
         padding: 15px;
         justify-content: space-evenly;
+    }
+
+    .top-block__timetable-inner_wrapper {
+        margin: 5px;
+    }
+
+    .products__top-block, .products__sales_item {
+        padding: 5px 35px;
     }
 
 }
