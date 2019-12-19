@@ -144,7 +144,63 @@
     }
 
     aside {
+        display: flex;
+    }
+
+    .aside-btn-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 170px;
+        width: 20px;
+        position: fixed;
+        z-index: 2;
+        top: 60px;
+        left: 0;
+        border: 1px solid rgba(255, 198, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(0, 0, 0, 1);
+        writing-mode: vertical-lr;
+        padding: 13px;
+    }
+
+    #aside-btn {
         display: none;
+    }
+
+    .aside-btn-label span {
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+
+    aside nav {
+        display: none;
+        margin-top: 60px;
+    }
+
+    #aside-btn:checked ~ nav {
+        display: block;
+    }
+
+    aside nav {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        border: 2px solid rgba(255, 198, 0, 1);
+        background-color: rgba(255, 255, 255, 1);
+        max-width: 200px;
+    }
+
+    aside nav ul {
+        position: relative;
+    }
+
+    aside nav a {
+        position: relative;
+        left: 30px;
+        display: block;
     }
 
     .products__top-block {

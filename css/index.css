@@ -45,7 +45,7 @@ h4 {
 header {
     background-color: rgba(255, 198, 0, 1);
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
     right: 0;
@@ -330,8 +330,12 @@ section.wrapper {
     margin: 0 5px;
 }
 
+.aside-btn-label, #aside-btn {
+    display: none;
+}
+
 aside nav {
-    margin-top: 140px;
+    margin-top: calc(100px + 2.92vw); /*140px*/
     float: left;
     width: 100%;
     max-width: 320px;
