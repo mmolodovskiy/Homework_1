@@ -733,6 +733,10 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
     color: rgba(255, 198, 0, 1);
 }
 
+.footer_sidebar__menu, .footer_sidebar__rating {
+    margin: 5px 0;
+}
+
 .anchor-to-top {
     position: fixed;
     bottom: 2%;
