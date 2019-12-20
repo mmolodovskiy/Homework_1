@@ -29,6 +29,12 @@
                     </label>
                     <div class="burger-menu">
                         <div class="burger-menu__wrapper">
+                            <!-- some bug -->
+                            <!-- Tag <form> with class 'info_button__search' is deleted from markup
+                            if it is on the first place after 'burger-menu__wrapper'.
+                            All its children is factored outside meanwhile.
+                            So <form> with class 'smth' is only dummy to correct this bug-->
+                            <form class="smth"></form>
                             <form class="info_button info_button__search">
                                 <input type="search" placeholder="Zoek product" id="burger_search">
                                 <button class="" type="button">

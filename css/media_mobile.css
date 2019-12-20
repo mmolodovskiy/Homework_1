@@ -89,7 +89,7 @@
     }
 
     .burger-menu .info_button {
-        margin: 0 8px;
+        margin: 2px 8px;
     }
 
     .header_info__buttons {
@@ -110,6 +110,8 @@
 
     .burger-menu .info_button__search {
         display: flex;
+        flex: 1 1 140px;
+        order: 1;
     }
 
     .burger-menu .header_info__advantages {
@@ -134,7 +136,9 @@
 
     .burger-menu__wrapper {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
         padding: 0 10px;
     }
 
@@ -295,6 +299,11 @@
 
     .anchor-to-top img {
         width: 50%;
+    }
+
+    .smth {
+        opacity: 0;
+        width: 1px;
     }
 
 }
