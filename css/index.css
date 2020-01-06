@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    outline: none;
+}
+
 h2 {
     font-size: calc(24px + .83vw); /*40px*/
 }
@@ -127,7 +131,7 @@ section.wrapper {
     width: 140px;
     height: 40px;
     border-radius: 4px;
-    outline: 1px solid rgba(255, 198, 0, 1);
+    box-shadow: 0 0 0 1px rgba(255, 198, 0, 1);
     background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 1);
     padding-left: 7px;
@@ -190,7 +194,6 @@ section.wrapper {
     right: 10px;
     background-color: transparent;
     border: none;
-    outline: none;
 }
 
 .BTW_check {
@@ -245,7 +248,6 @@ section.wrapper {
     border: none;
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(0, 0, 0, 1);
-    outline: none;
 }
 
 .info_button__login:hover {
@@ -267,7 +269,6 @@ section.wrapper {
     align-items: center;
     background-color: rgba(0, 0, 0, 1);
     border: none;
-    outline: none;
     color: rgba(255, 255, 255, 1);
     margin-right: 0;
     position: relative;
@@ -336,39 +337,40 @@ section.wrapper {
     display: none;
 }
 
-aside nav {
-    margin-top: calc(100px + 2.08vw); /*140px*/
-    float: left;
-    width: 100%;
-    max-width: 320px;
-}
-
-aside ul {
-    background-color: rgba(255, 255, 255, 1);
-    min-width: 160px;
-}
-
-aside a {
-    line-height: 30px;
-    margin: 0 10px;
-}
-
-aside a:visited {
-    color: rgba(0, 0, 0, 1);
-}
-
-aside a:hover {
-    font-size: 15px;
-    color: rgba(255, 198, 0, 1);
-}
-
 main {
     padding-top: 140px;
 }
 
 .products {
     display: flex;
-    flex-direction: column;
+}
+
+.products__menu {
+    display: flex;
+    flex: 1 0 320px;
+}
+
+.products__menu ul {
+    background-color: rgba(255, 255, 255, 1);
+    min-width: 160px;
+}
+
+.products__menu a {
+    line-height: 30px;
+    margin: 0 10px;
+}
+
+.products__menu a:visited {
+    color: rgba(0, 0, 0, 1);
+}
+
+.products__menu a:hover {
+    font-size: 15px;
+    color: rgba(255, 198, 0, 1);
+}
+
+.products__wrapper {
+    flex: 1 1 auto;
 }
 
 .products__top-block_wrapper {
@@ -377,7 +379,7 @@ main {
 }
 
 .products__top-block {
-    height: auto;
+    padding: 12px 0;
 }
 
 .products__top-block, .products__sales_item {
@@ -554,7 +556,6 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
 
 .slider__nav-arrow {
     border: 0;
-    outline: none;
     position: absolute;
     top: 50%;
     display: flex;
