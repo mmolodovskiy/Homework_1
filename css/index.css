@@ -370,7 +370,7 @@ main {
 }
 
 .products__wrapper {
-    flex: 1 1 auto;
+    flex: 1 1 calc(100% - 320px);
 }
 
 .products__top-block_wrapper {
