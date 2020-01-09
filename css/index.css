@@ -347,7 +347,7 @@ main {
 
 .products__menu {
     display: flex;
-    flex: 1 0 320px;
+    flex: 1 1 29%;
 }
 
 .products__menu ul {
@@ -370,120 +370,26 @@ main {
 }
 
 .products__wrapper {
-    flex: 1 1 calc(100% - 320px);
-}
-
-.products__top-block_wrapper {
+    flex: 1 1 71%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.products__top-block {
-    padding: 12px 0;
-}
-
-.products__top-block, .products__sales_item {
+.products__block {
+    flex: 1 1 49%;
     display: flex;
+    padding: 35px;
     background-color: rgba(242, 242, 242, 1);
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
-.top-block__sales {
-    padding-top: 30px;
-    flex: 1 1 calc(65% - 15px);
-    line-height: 42px;
-    justify-content: space-between;
-}
-
-.top-block__sales span {
-    font-size: calc(20px + .62vw); /*32px*/
-}
-
-.top-block__timetable {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 calc(33% - 15px);
-    min-width: 245px;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding-left: 35px;
-    line-height: 18px;
-}
-
-.top-block__timetable-inner_wrapper {
-    margin: 9px 0;
-    position: relative;
-}
-
-.top-block__timetable-inner_wrapper img {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -20px;
-}
-
-div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-inner_wrapper:nth-of-type(2) {
-    display: flex;
-    justify-content: space-between;
-}
-
-.products__sales_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.products__sales_item {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(180px + 2.34vw); /*225px*/
-    flex: 1 1 calc(49% - 15px);
-}
-
-.products__sales_item_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    line-height: 32px;
-}
-
-.products__sales_item_wrapper span {
-    font-size: calc(18px + .31vw); /*24px*/
-}
-
-.products__top-block, .products__sales_item {
     margin: 3px;
 }
 
-.products__top-block:first-of-type.top-block__sales {
-    margin-left: 0;
-}
-
-.products__top-block:last-of-type.top-block__timetable {
+.products__block:nth-child(even) {
     margin-right: 0;
 }
 
-.products__sales_item:first-of-type {
-    margin-left: 0;
-}
-
-.products__sales_item:last-of-type {
-    margin-right: 0;
-}
-
-.top-block__sales img, .products__sales_item img {
-    object-fit: contain;
-}
-
-.top-block__sales_wrapper, .products__sales_item_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.top-block__sales_wrapper button, .products__sales_item_wrapper button {
+.products__block button {
     background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 1);
     border-radius: 4px;
@@ -491,12 +397,58 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
     height: 40px;
     width: 80px;
     transition: all .15s;
+    margin: 10px 0;
 }
 
-.top-block__sales_wrapper button:hover, .products__sales_item_wrapper button:hover {
+.products__block button:hover {
     transform: scale(1.05);
     color: rgba(255, 198, 0, 1);
     transition: all .15s;
+}
+
+.products_block__sales {
+    flex: 1 1 64%;
+}
+
+.products_block__sales .products_block__sales_wrapper span {
+    font-size: calc(20px + .62vw); /*32px*/
+}
+
+.products_block__sales_wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+}
+
+.products_block__sales_wrapper span {
+    font-size: calc(18px + .31vw); /*24px*/
+}
+
+.products_block__sales .products_block__sales_wrapper {
+    line-height: 42px;
+}
+
+.products_block__timetable {
+    flex: 1 1 33%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    line-height: 18px;
+}
+
+.products_block__timetable-inner_wrapper {
+    margin: 5px 0;
+}
+
+.products_block__timetable_item {
+    position: relative;
+}
+
+.products_block__timetable_item img {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: -20px;
 }
 
 .slider {
@@ -518,12 +470,11 @@ div.top-block__timetable-inner_wrapper:nth-of-type(1), div.top-block__timetable-
 }
 
 .slider__item {
-    height: calc(200px + 4.16vw); /*280px*/
     display: flex;
     flex: 1 1 20%;
     flex-direction: column;
     border-right: 1px solid rgba(225, 225, 225, 1);
-    padding: 0 25px;
+    padding: calc(15px + 1.30vw) 25px; /*40px*/
     justify-content: center;
     position: relative;
 }

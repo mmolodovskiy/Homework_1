@@ -31,7 +31,7 @@
                         <div class="burger-menu__wrapper">
                             <!-- some bug -->
                             <!-- Tag <form> with class 'info_button__search' is deleted from markup
-                            if it is on the first place after 'burger-menu__wrapper'.
+                            if it is on the first place inside 'burger-menu__wrapper'.
                             All its children is factored outside meanwhile.
                             So <form> with class 'smth' is only dummy to correct this bug-->
                             <form class="smth"></form>
@@ -157,63 +157,59 @@
                 </nav>
             </aside>
             <div class="products__wrapper">
-                <div class="products__top-block_wrapper">
-                    <div class="products__top-block top-block__sales">
-                        <div class="top-block__sales_wrapper">
-                            <h3>Gehoorbescherming</h3>
-                            <span>20% korting</span>
-                            <button type="submit">
-                                Bestel nu
-                            </button>
-                        </div>
-                        <img src="img/linkedFile.png" alt="Top sales product">
+                <div class="products__block products_block__sales">
+                    <div class="products_block__sales_wrapper">
+                        <h3>Gehoorbescherming</h3>
+                        <span>20% korting</span>
+                        <button type="submit">
+                            Bestel nu
+                        </button>
                     </div>
-                    <dl class="products__top-block top-block__timetable">
-                        <dd class="top-block__timetable-inner_wrapper">Heb je een vraag?<br>
-                            Wij staan voor je klaar!</dd>
-                        <div class="top-block__timetable-inner_wrapper">
-                            <dt class="top-block__timetable_item">
-                                <img src="img/clock.png" alt="">
-                            </dt>
-                            <dd>
-                                Openingstijden:<br>
-                                Ma-Vr 08.00 uur - 18.00 uur<br>
-                                Za 08.00 uur - 16.00 uur<br>
-                            </dd>
-                        </div>
-                        <div class="top-block__timetable-inner_wrapper">
-                            <dt class="top-block__timetable_item">
-                                <img src="img/phoneImg.png" alt="">
-                            </dt>
-                            <dd>
-                                Telefonisch bereikbaar:<br>
-                                Ma-Vr 08.00 uur - 18.00 uur<br>
-                                Za 08.00 uur - 16.00 uur<br>
-                            </dd>
-                        </div>
-                    </dl>
+                    <img src="img/linkedFile.png" alt="Top sales product">
                 </div>
-                <div class="products__sales_wrapper">
-                    <div class="products__sales_item">
-                        <div class="products__sales_item_wrapper">
-                            <h4>Schuurmachines</h4>
-                            <span>Vanaf € 150,-</span>
-                            <button type="submit">
-                                Bestel nu
-                            </button>
-                        </div>
-                        <img src="img/linkedFile2.png" alt="Sales product">
+                <dl class="products__block products_block__timetable">
+                    <dd class="products_block__timetable-inner_wrapper">Heb je een vraag?<br>
+                        Wij staan voor je klaar!</dd>
+                    <div class="products_block__timetable-inner_wrapper">
+                        <dt class="products_block__timetable_item">
+                            <img src="img/clock.png" alt="">
+                        </dt>
+                        <dd>
+                            Openingstijden:<br>
+                            Ma-Vr&nbsp;&nbsp;08.00 uur - 18.00 uur<br>
+                            Za&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08.00 uur - 16.00 uur<br>
+                        </dd>
                     </div>
-                    <div class="products__sales_item">
-                        <div class="products__sales_item_wrapper">
-                            <h4>Rookmelders</h4>
-                            <span>Vanaf € 50,-</span>
-                            <button type="submit">
-                                Bestel nu
-                            </button>
-                        </div>
-                        <img src="img/linkedFile3.png" alt="Sales product">
+                    <div class="products_block__timetable-inner_wrapper">
+                        <dt class="products_block__timetable_item">
+                            <img src="img/phoneImg.png" alt="">
+                        </dt>
+                        <dd>
+                            Telefonisch bereikbaar:<br>
+                            Ma-Vr&nbsp;&nbsp;08.00 uur - 18.00 uur<br>
+                            Za&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08.00 uur - 16.00 uur<br>
+                        </dd>
                     </div>
+                </dl>
+                <div class="products__block">
+                    <div class="products_block__sales_wrapper">
+                        <h4>Schuurmachines</h4>
+                        <span>Vanaf € 150,-</span>
+                        <button type="submit">
+                            Bestel nu
+                        </button>
+                    </div>
+                    <img src="img/linkedFile2.png" alt="Sales product">
+                </div>
+                <div class="products__block">
+                    <div class="products_block__sales_wrapper">
+                        <h4>Rookmelders</h4>
+                        <span>Vanaf € 50,-</span>
+                        <button type="submit">
+                            Bestel nu
+                        </button>
+                    </div>
+                    <img src="img/linkedFile3.png" alt="Sales product">
                 </div>
             </div>
         </section>
