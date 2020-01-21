@@ -492,8 +492,9 @@ main {
 }
 
 .slider__item img {
-    object-fit: contain;
+    object-fit: scale-down;
     margin: 20px 5px;
+    max-width: 100%;
 }
 
 .slider__item h5, .slider__item span:nth-of-type(1) {
