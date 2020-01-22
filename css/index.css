@@ -466,12 +466,12 @@ main {
 .slider__items_wrapper {
     display: flex;
     justify-content: flex-start;
-    overflow: hidden;
+    position: relative;
 }
 
 .slider__item {
     display: flex;
-    flex: 1 1 20%;
+    flex: 1 0 20%;
     flex-direction: column;
     border-right: 1px solid rgba(225, 225, 225, 1);
     padding: calc(15px + 1.30vw) 25px; /*40px*/
