@@ -8,15 +8,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Homework_4" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44951922">
+    <splitter split-orientation="horizontal" split-proportion="0.27804488">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-960">
-                  <caret line="220" column="24" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
+                <state relative-caret-position="31">
+                  <caret line="263" column="10" lean-forward="true" selection-start-line="263" selection-start-column="10" selection-end-line="263" selection-end-column="10" />
                   <folding>
                     <element signature="e#9740#9746#0" expanded="true" />
                     <element signature="e#9746#9752#0" expanded="true" />
@@ -48,8 +51,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="467" column="32" selection-start-line="467" selection-start-column="32" selection-end-line="467" selection-end-column="32" />
+                <state relative-caret-position="9933">
+                  <caret line="473" column="23" selection-start-line="473" selection-start-column="23" selection-end-line="473" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -57,8 +60,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+                <state relative-caret-position="441">
+                  <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -98,9 +101,9 @@
       <list>
         <option value="$PROJECT_DIR$/css/media_tablet.css" />
         <option value="$PROJECT_DIR$/css/media_mobile.css" />
+        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/css/index.css" />
       </list>
     </option>
   </component>
@@ -123,11 +126,6 @@
               <item name="Homework_4" type="b2602c69:ProjectViewProjectNode" />
               <item name="Homework_4" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Homework_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Homework_4" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -136,7 +134,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Github/Portfolio-project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -193,19 +191,21 @@
       <workItem from="1578390215434" duration="1239000" />
       <workItem from="1578502950896" duration="18336000" />
       <workItem from="1579644213837" duration="1826000" />
+      <workItem from="1579772227791" duration="15360000" />
+      <workItem from="1579806076155" duration="295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214890000" />
+    <option name="totallyTimeSpent" value="230610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0863836" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.0863836" />
+      <window_info id="Structure" order="1" sideWeight="0.50165564" side_tool="true" weight="0.08912387" />
+      <window_info id="Favorites" order="2" sideWeight="0.50165564" side_tool="true" weight="0.08912387" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -216,8 +216,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49267936" visible="true" weight="0.0496" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50732064" side_tool="true" visible="true" weight="0.0496" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4919473" weight="0.0496" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5080527" side_tool="true" weight="0.0496" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -257,10 +257,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9933">
+          <caret line="473" column="23" selection-start-line="473" selection-start-column="23" selection-end-line="473" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960">
-          <caret line="220" column="24" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
+        <state relative-caret-position="31">
+          <caret line="263" column="10" lean-forward="true" selection-start-line="263" selection-start-column="10" selection-end-line="263" selection-end-column="10" />
           <folding>
             <element signature="e#9740#9746#0" expanded="true" />
             <element signature="e#9746#9752#0" expanded="true" />
@@ -281,20 +295,6 @@
             <element signature="e#10385#10391#0" expanded="true" />
             <element signature="e#10391#10397#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="467" column="32" selection-start-line="467" selection-start-column="32" selection-end-line="467" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>

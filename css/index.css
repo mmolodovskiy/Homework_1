@@ -464,9 +464,14 @@ main {
 }
 
 .slider__items_wrapper {
+    overflow: hidden;
+}
+
+.slider__items {
     display: flex;
     justify-content: flex-start;
     position: relative;
+    transition: left .3s ease-in-out;
 }
 
 .slider__item {
