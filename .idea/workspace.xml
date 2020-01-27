@@ -15,8 +15,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="220" column="41" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="41" />
+                <state relative-caret-position="286">
+                  <caret line="219" column="64" selection-start-line="219" selection-start-column="51" selection-end-line="219" selection-end-column="64" />
                   <folding>
                     <element signature="e#9740#9746#0" expanded="true" />
                     <element signature="e#9746#9752#0" expanded="true" />
@@ -47,8 +47,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="453" column="9" lean-forward="true" selection-start-line="453" selection-start-column="9" selection-end-line="453" selection-end-column="9" />
+                <state relative-caret-position="-117">
+                  <caret line="453" column="9" selection-start-line="453" selection-start-column="9" selection-end-line="453" selection-end-column="9" />
                   <folding>
                     <marker date="1580056215806" expanded="true" signature="7189:7389" ph="..." />
                   </folding>
@@ -59,8 +59,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/media_mobile.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="175" column="29" lean-forward="true" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="29" />
+                <state relative-caret-position="3850">
+                  <caret line="175" column="29" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -68,7 +68,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/media_tablet.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-44">
+                <state relative-caret-position="550">
                   <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
                 </state>
               </provider>
@@ -77,8 +77,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="638">
-                  <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+                <state relative-caret-position="418">
+                  <caret line="85" column="3" lean-forward="true" selection-end-line="85" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -108,6 +108,7 @@
       <find>aside</find>
       <find>wrapper</find>
       <find>outline</find>
+      <find>wrap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,7 +158,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,12 +223,13 @@
       <workItem from="1579817272574" duration="3516000" />
       <workItem from="1579850633112" duration="575000" />
       <workItem from="1579895790109" duration="598000" />
-      <workItem from="1580033126553" duration="29378000" />
+      <workItem from="1580033126553" duration="29477000" />
+      <workItem from="1580147915144" duration="7681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249028000" />
+    <option name="totallyTimeSpent" value="256808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -273,34 +275,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/media_mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3850">
+          <caret line="175" column="29" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/media_tablet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
+        <state relative-caret-position="550">
           <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="453" column="9" lean-forward="true" selection-start-line="453" selection-start-column="9" selection-end-line="453" selection-end-column="9" />
+        <state relative-caret-position="-117">
+          <caret line="453" column="9" selection-start-line="453" selection-start-column="9" selection-end-line="453" selection-end-column="9" />
           <folding>
             <marker date="1580056215806" expanded="true" signature="7189:7389" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/media_mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="175" column="29" lean-forward="true" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="220" column="41" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="41" />
+        <state relative-caret-position="286">
+          <caret line="219" column="64" selection-start-line="219" selection-start-column="51" selection-end-line="219" selection-end-column="64" />
           <folding>
             <element signature="e#9740#9746#0" expanded="true" />
             <element signature="e#9746#9752#0" expanded="true" />
@@ -325,8 +327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="418">
+          <caret line="85" column="3" lean-forward="true" selection-end-line="85" selection-end-column="3" />
         </state>
       </provider>
     </entry>
