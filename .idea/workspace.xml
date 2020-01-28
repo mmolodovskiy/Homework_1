@@ -15,8 +15,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="219" column="64" selection-start-line="219" selection-start-column="51" selection-end-line="219" selection-end-column="64" />
+                <state relative-caret-position="330">
+                  <caret line="221" column="44" selection-start-line="221" selection-start-column="32" selection-end-line="221" selection-end-column="44" />
                   <folding>
                     <element signature="e#9740#9746#0" expanded="true" />
                     <element signature="e#9746#9752#0" expanded="true" />
@@ -77,8 +77,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="85" column="3" lean-forward="true" selection-end-line="85" selection-end-column="3" />
+                <state relative-caret-position="-506">
+                  <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -109,6 +109,7 @@
       <find>wrapper</find>
       <find>outline</find>
       <find>wrap</find>
+      <find>shiftPosition</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,12 +225,12 @@
       <workItem from="1579850633112" duration="575000" />
       <workItem from="1579895790109" duration="598000" />
       <workItem from="1580033126553" duration="29477000" />
-      <workItem from="1580147915144" duration="7681000" />
+      <workItem from="1580147915144" duration="16174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256808000" />
+    <option name="totallyTimeSpent" value="265301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -299,10 +300,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="219" column="64" selection-start-line="219" selection-start-column="51" selection-end-line="219" selection-end-column="64" />
+        <state relative-caret-position="330">
+          <caret line="221" column="44" selection-start-line="221" selection-start-column="32" selection-end-line="221" selection-end-column="44" />
           <folding>
             <element signature="e#9740#9746#0" expanded="true" />
             <element signature="e#9746#9752#0" expanded="true" />
@@ -322,13 +330,6 @@
             <element signature="e#10385#10391#0" expanded="true" />
             <element signature="e#10391#10397#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="85" column="3" lean-forward="true" selection-end-line="85" selection-end-column="3" />
         </state>
       </provider>
     </entry>
