@@ -1,10 +1,10 @@
-var leftArrow = document.getElementById("leftArrow");
-var rightArrow = document.getElementById("rightArrow");
-var sliderItems = document.getElementById("sliderItems");
-var sliderItem = document.getElementsByClassName("slider__item");
-var defaultPosition = 0;
-var defaultShift = 0;
-var clonedCount = 0;
+var leftArrow = document.getElementById("leftArrow"),
+    rightArrow = document.getElementById("rightArrow"),
+    sliderItems = document.getElementById("sliderItems"),
+    sliderItem = document.getElementsByClassName("slider__item"),
+    defaultPosition = 0,
+    defaultShift = 0,
+    clonedCount = 0;
 
 function clickLeftArrow() {
     leftArrow.onclick = function() {
@@ -22,8 +22,8 @@ function clickRightArrow() {
     };
 }
 
-var slide = sliderItems.querySelector(".slider__item");
-var oneSlideWidth = slide.clientWidth;
+var slide = sliderItems.querySelector(".slider__item"),
+    oneSlideWidth = slide.clientWidth;
 
 function checkPosition() {
     for (i = 0; i < sliderItem.length; i++) {
@@ -81,11 +81,25 @@ function cycleSlides(isLeft) {
     }
 }
 
-function selectProduct() {
-    var zz = document.querySelectorAll(".info_button_link");
-    zz.scrollIntoView({
-        behavior: "smooth",
-        block:    "start"
+function scrollToAnchor() {
+    const anchors = [].slice.call(document.querySelectorAll('.info_button_select__items a[href*="#"]')),
+        animationTime = 300,
+        framesCount = 20;
+
+    anchors.forEach(function(item) {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+            let scroller = setInterval(function() {
+                let scrollBy = coordY / framesCount;
+                if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+                    window.scrollBy(0, scrollBy);
+                } else {
+                    window.scrollTo(0, coordY);
+                    clearInterval(scroller);
+                }
+            }, animationTime / framesCount);
+        });
     });
 }
 
@@ -96,7 +110,7 @@ window.addEventListener('resize',function(){
 
 window.addEventListener('DOMContentLoaded',function(){
     checkResize();
-    selectProduct();
+    scrollToAnchor();
     clickLeftArrow();
     clickRightArrow();
 });
