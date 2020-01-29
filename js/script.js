@@ -1,19 +1,25 @@
 var leftArrow = document.getElementById("leftArrow");
 var rightArrow = document.getElementById("rightArrow");
+var sliderWrapper = document.getElementById("sliderWrapper");
 var sliderItems = document.getElementById("sliderItems");
 var sliderItem = document.getElementsByClassName("slider__item");
 var defaultPosition = 0;
-var defaultShift = null;
+var defaultShift = 0;
 
 function clickLefttArrow() {
     leftArrow.onclick = function() {
+        cycleSlides();
         defaultPosition = parseInt(defaultPosition)-defaultShift+'%';
         sliderItems.style.left=defaultPosition;
+        console.log('defaultPosition: ' + defaultPosition);
+        console.log('!(parseInt(defaultPosition): ' + -(parseInt(defaultPosition)));
+        console.log('defaultShift: ' + defaultShift);
     };
 }
 
 function clickRightArrow() {
     rightArrow.onclick = function() {
+        cycleSlides();
         defaultPosition = parseInt(defaultPosition)+defaultShift+'%';
         sliderItems.style.left=defaultPosition;
     };
@@ -59,7 +65,30 @@ function checkResize() {
                 return defaultShift = 20;
 }
 
-function cloneSlider() {
+function cycleSlides() {
+    var lastSliderRightPos = sliderItem[sliderItem.length-1].getBoundingClientRect().left
+        + sliderItem[sliderItem.length-1].getBoundingClientRect().width;
+    var sliderWrapperRightPos = sliderWrapper.getBoundingClientRect().left
+        + sliderWrapper.getBoundingClientRect().width;
+    var setOfSlider = document.querySelectorAll(".slider__item");
+
+    function cloneSlides() {
+        for (i = 0; i < setOfSlider.length; sliderItem[i++]) {
+            var clone = sliderItem[i].cloneNode(true);
+            sliderItems.append(clone);
+        }
+    }
+
+    var xx = -(parseInt(defaultPosition))/defaultShift;
+    var yy = sliderItem.length-(-(parseInt(defaultPosition))/defaultShift);
+
+    if (xx == yy) {
+        cloneSlides();
+    }
+
+    // if (Math.floor(lastSliderRightPos) == Math.floor(sliderWrapperRightPos)) {
+    //     cloneSlides();
+    // }
 }
 
 window.addEventListener('resize',function(){
@@ -71,10 +100,8 @@ window.addEventListener('DOMContentLoaded',function(){
     checkResize();
     clickLefttArrow();
     clickRightArrow();
-    cloneSlider();
+
 });
-
-
 
 
 
