@@ -88,7 +88,22 @@ function scrollToAnchor() {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             var attr = anchor.getAttribute('href');
-            var db = Array.from(sliderItem);
+            var slideArray = Array.from(sliderItem);
+            var anchorArray = Array.from(anchors);
+            var anchorArrayIndex = anchorArray.indexOf(this, 0)+1;
+            var gtgtg = slideArray[anchorArrayIndex-1];
+            console.log(anchorArrayIndex);
+            for (i = 0; i <= slideArray.length-1; i++) {
+                    slideArray[i].classList.remove(".slide-active");
+                }
+            gtgtg.classList.add(".slide-active");
+
+            // for (i = 0; i <= slideArray.length-2; i++) {
+            //     if (slideArray.indexOf(i, 0) == anchorArray.indexOf(i, 0)) {
+            //         console.log(this);
+            //         slideArray[i].classList.add(".slide-active");
+            //     }
+            // }
 
             var headerBottomValue = document.getElementsByTagName('header')[0].clientHeight;
             var sliderTopValue = sliderItems.getBoundingClientRect().top;
