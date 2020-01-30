@@ -82,25 +82,30 @@ function cycleSlides(isLeft) {
 }
 
 function scrollToAnchor() {
-    const anchors = [].slice.call(document.querySelectorAll('.info_button_select__items a[href*="#"]')),
-        animationTime = 300,
-        framesCount = 20;
+    var anchors = document.querySelectorAll('a.info_button_link');
 
-    anchors.forEach(function(item) {
-        item.addEventListener('click', function(e) {
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
-            let scroller = setInterval(function() {
-                let scrollBy = coordY / framesCount;
-                if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-                    window.scrollBy(0, scrollBy);
-                } else {
-                    window.scrollTo(0, coordY);
-                    clearInterval(scroller);
-                }
-            }, animationTime / framesCount);
-        });
-    });
+            var attr = anchor.getAttribute('href');
+            var db = Array.from(sliderItem);
+
+            var headerBottomValue = document.getElementsByTagName('header')[0].clientHeight;
+            var sliderTopValue = sliderItems.getBoundingClientRect().top;
+            var heightSliderTitle = document.querySelector(".slider__top-title").offsetHeight;
+            var offsetPosition = sliderTopValue - headerBottomValue - heightSliderTitle;
+            var aa = document.querySelector(".slider__top-title").getBoundingClientRect().top;
+            var bb = document.getElementsByTagName('header')[0].clientHeight
+                + document.getElementsByTagName('header')[0].getBoundingClientRect().top;
+            console.log(aa);
+            console.log(bb);
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        })
+    }
 }
 
 window.addEventListener('resize',function(){
