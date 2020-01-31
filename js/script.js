@@ -1,10 +1,37 @@
 var leftArrow = document.getElementById("leftArrow"),
     rightArrow = document.getElementById("rightArrow"),
+    arrow = document.getElementsByClassName("slider__nav-arrow"),
+    sliderWrapper = document.getElementById("sliderWrapper"),
     sliderItems = document.getElementById("sliderItems"),
     sliderItem = document.getElementsByClassName("slider__item"),
     defaultPosition = 0,
     defaultShift = 0,
     clonedCount = 0;
+
+// arrow.click = function (event) {
+//     console.log(sliderWrapper.onclick);
+//     var target = event.target;
+//     console.log(target);
+//     console.log(target.tagName);
+//
+//     if (target.tagName != "button") {
+//         return;
+//     }
+//     else
+//         clickArrow(target);
+// };
+//
+// function clickArrow(button) {
+//     if (button.classList.contains("slider_left-arrow")) {
+//         cycleSlides(false);
+//         defaultPosition = parseInt(defaultPosition)+defaultShift+'%';
+//     }
+//     else {
+//         cycleSlides(true);
+//         defaultPosition = parseInt(defaultPosition)-defaultShift+'%';
+//     }
+//     sliderItems.style.left=defaultPosition;
+// }
 
 function clickLeftArrow() {
     leftArrow.onclick = function() {
