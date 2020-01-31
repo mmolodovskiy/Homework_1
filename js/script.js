@@ -1,56 +1,34 @@
-var leftArrow = document.getElementById("leftArrow"),
-    rightArrow = document.getElementById("rightArrow"),
-    arrow = document.getElementsByClassName("slider__nav-arrow"),
-    sliderWrapper = document.getElementById("sliderWrapper"),
+var arrow = document.getElementsByClassName("slider__nav-arrow"),
     sliderItems = document.getElementById("sliderItems"),
+    slide = sliderItems.querySelector(".slider__item"),
+    oneSlideWidth = slide.clientWidth,
     sliderItem = document.getElementsByClassName("slider__item"),
     defaultPosition = 0,
     defaultShift = 0,
     clonedCount = 0;
 
-// arrow.click = function (event) {
-//     console.log(sliderWrapper.onclick);
-//     var target = event.target;
-//     console.log(target);
-//     console.log(target.tagName);
-//
-//     if (target.tagName != "button") {
-//         return;
-//     }
-//     else
-//         clickArrow(target);
-// };
-//
-// function clickArrow(button) {
-//     if (button.classList.contains("slider_left-arrow")) {
-//         cycleSlides(false);
-//         defaultPosition = parseInt(defaultPosition)+defaultShift+'%';
-//     }
-//     else {
-//         cycleSlides(true);
-//         defaultPosition = parseInt(defaultPosition)-defaultShift+'%';
-//     }
-//     sliderItems.style.left=defaultPosition;
-// }
+for (i = 0; i < arrow.length; i++) {
+    arrow[i].onclick = function (event) {
+        var target = event.currentTarget;
+        if ((target.tagName.toLowerCase()) == "button") {
+            clickArrow(target);
+        }
+        else
+            return;
+    };
+}
 
-function clickLeftArrow() {
-    leftArrow.onclick = function() {
+function clickArrow(target) {
+    if (target.classList.contains("slider_left-arrow")) {
         cycleSlides(false);
         defaultPosition = parseInt(defaultPosition)+defaultShift+'%';
-        sliderItems.style.left=defaultPosition;
-    };
-}
-
-function clickRightArrow() {
-    rightArrow.onclick = function() {
+    }
+    else {
         cycleSlides(true);
         defaultPosition = parseInt(defaultPosition)-defaultShift+'%';
-        sliderItems.style.left=defaultPosition;
-    };
+    }
+    sliderItems.style.left=defaultPosition;
 }
-
-var slide = sliderItems.querySelector(".slider__item"),
-    oneSlideWidth = slide.clientWidth;
 
 function checkPosition() {
     for (i = 0; i < sliderItem.length; i++) {
@@ -92,7 +70,6 @@ function cycleSlides(isLeft) {
     }
 
     var xx = -(parseInt(defaultPosition))/defaultShift;
-    var yy = sliderItem.length-(-(parseInt(defaultPosition))/defaultShift);
 
     if (isLeft && xx >= slidesCount - 5) {
         cloneSlides(isLeft);
@@ -127,21 +104,23 @@ function scrollToAnchor() {
                 behavior: "smooth"
             });
 
-            var slidesArray = Array.from(sliderItem);
-            var anchorsArray = Array.from(anchors);
-            var anchorsArrayIndex = anchorsArray.indexOf(this, 0)+1;
-            defaultPosition = sliderItems.style.left = -((anchorsArrayIndex-1) * defaultShift)+'%';
-            if (anchorsArrayIndex >= 5) {
-                cycleSlides(true);
-            }
+            var slidesArray = Array.from(sliderItem),
+                anchorsArray = Array.from(anchors),
+                anchorsArrayIndex = anchorsArray.indexOf(this, 0)+1,
+                selectedSlide = slidesArray[anchorsArrayIndex-1];
 
-            var selectedSlide = slidesArray[anchorsArrayIndex-1];
             for (i = 0; i <= slidesArray.length-1; i++) {
                 slidesArray[i].classList.remove("slide-active");
             }
+
             setTimeout(function () {
+                defaultPosition = sliderItems.style.left = -((anchorsArrayIndex-1) * defaultShift)+'%';
                 selectedSlide.classList.add("slide-active");
-            }, 330);
+            }, 500);
+
+            if (anchorsArrayIndex >= 5) {
+                cycleSlides(true);
+            }
         })
     }
 }
@@ -154,7 +133,7 @@ function goToHeader() {
 }
 
 document.getElementById('anchorToTop').addEventListener('click', function(e) {
-    e.preventDefault();  // запрет перехода по ссылке, вместо него скрипт
+    e.preventDefault();
     goToHeader();
 });
 
@@ -166,6 +145,4 @@ window.addEventListener('resize',function(){
 window.addEventListener('DOMContentLoaded',function(){
     checkResize();
     scrollToAnchor();
-    clickLeftArrow();
-    clickRightArrow();
 });
