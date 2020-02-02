@@ -472,6 +472,7 @@ main {
     justify-content: flex-start;
     position: relative;
     transition: left .3s ease-in-out;
+    left: 0;
 }
 
 .slider__item {
